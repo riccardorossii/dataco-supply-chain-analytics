@@ -8,11 +8,6 @@ Cosa fa:
 2. Esegue alcune query KPI di esempio (lead time, ritardi, fatturato per categoria)
 3. Stampa i risultati a schermo
 
-Prima di eseguire:
-- Installa MySQL Server e crea un database vuoto: CREATE DATABASE supply_chain;
-- Scarica "DataCoSupplyChainDataset.csv" da Kaggle e mettilo in questa cartella
-- pip install pandas mysql-connector-python sqlalchemy
-- Aggiorna i parametri di connessione qui sotto (DB_USER, DB_PASSWORD)
 """
 
 import re
