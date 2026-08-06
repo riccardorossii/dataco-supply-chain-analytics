@@ -35,6 +35,47 @@ Rispondere a domande operative tipiche di una supply chain / ops:
 
 ![Rischio ritardo per modalita' di spedizione](images/rischio_per_spedizione.png)
 
+---
+
+# Demand forecasting
+
+Previsione del fatturato mensile a partire dai dati storici, confrontando un approccio semplice (media mobile) con un modello piu' avanzato (Prophet).
+
+## Obiettivo
+
+Rispondere a domande utili per la pianificazione operativa:
+- Il fatturato ha un trend di crescita o di calo nel tempo?
+- Esistono pattern stagionali ricorrenti?
+- Quale fatturato aspettarsi nei prossimi mesi?
+
+## Setup
+
+1. Assicurati che il database MySQL `supply_chain` sia gia' popolato (vedi progetto 1)
+2. Installa le dipendenze aggiuntive: `pip install jupyterlab prophet`
+3. Avvia Jupyter Lab: `jupyter lab`
+4. Apri `demand_forecasting.ipynb`, aggiorna le credenziali MySQL, esegui le celle in ordine
+
+## Struttura
+
+- `demand_forecasting.ipynb` - notebook con l'intera analisi: caricamento dati, media mobile, modello Prophet, verifica dei risultati
+
+## Risultati principali
+
+- Il fatturato mostra un **trend in calo** costante nel periodo osservato, passando da circa 1,08 milioni di dollari (fine 2014) a circa 0,89 milioni di dollari (inizio 2018)
+- La stagionalita' annuale mostra un calo marcato a inizio gennaio e picchi ricorrenti tra fine ottobre e inizio novembre. Verificando il numero di ordini per mese, gennaio non presenta un volume di ordini inferiore agli altri mesi - il calo sembra quindi un pattern stagionale reale (es. rallentamento post-festivita'), non un artefatto di dati incompleti
+- La previsione per i prossimi 3 mesi indica un fatturato stabile, attorno a 900.000 dollari al mese, con un intervallo di incertezza che si allarga progressivamente man mano che ci si allontana dai dati osservati
+- Rispetto alla media mobile semplice, Prophet cattura meglio i pattern stagionali reali, che la media mobile tende a smussare o ignorare completamente
+
+## Visualizzazioni
+
+![Fatturato storico](images/fatturato_storico.png)
+
+![Fatturato reale vs media mobile](images/media_mobile.png)
+
+![Previsione Prophet](images/prophet_forecast.png)
+
+![Componenti del modello (trend e stagionalita')](images/prophet_components.png)
+
 ## Autore
 
 Riccardo Rossi — [LinkedIn](https://linkedin.com/in/riccardorossi-471597250)
