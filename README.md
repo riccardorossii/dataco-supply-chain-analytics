@@ -31,14 +31,19 @@ Rispondere a domande operative tipiche di un ruolo supply chain / ops:
 
 *(da completare con i tuoi numeri effettivi, esempio sotto)*
 
-- La regione con il ritardo medio di consegna piu' alto e' ... con ... giorni di ritardo medio
-- La modalita' di spedizione piu' affidabile e' ..., con solo ...% di ordini a rischio ritardo
-- La categoria "..." genera da sola il ...% del fatturato totale
+- La regione con il ritardo medio di consegna piu' alto è Central Asia con 0.65 giorni di ritardo medio
+- La modalita' di spedizione piu' affidabile è Standard Class, con solo il 39% di ordini a rischio ritardo
+- - La categoria Fishing genera da sola circa 7 milioni di $ di fatturato, quasi il doppio della seconda categoria (Cleats)
 
-## Prossimi passi
+## Visualizzazioni
 
-- Visualizzazione dei risultati in dashboard Power BI
-- Modello di forecasting della domanda su dati mensili (progetto separato)
+![Ritardo medio per regione](images/ritardo_per_regione.png)
+
+![Fatturato per categoria](images/fatturato_per_categoria.png)
+
+![Andamento fatturato mensile](images/fatturato_mensile.png)
+
+![Rischio ritardo per modalita' di spedizione](images/rischio_per_spedizione.png)
 
 ## Autore
 
