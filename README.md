@@ -23,7 +23,7 @@ Rispondere a domande operative tipiche di una supply chain / ops:
 
 - La regione con il ritardo medio di consegna piu' alto è Central Asia con 0.65 giorni di ritardo medio
 - La modalita' di spedizione piu' affidabile è Standard Class, con solo il 39% di ordini a rischio ritardo
-- - La categoria Fishing genera da sola circa 7 milioni di $ di fatturato, quasi il doppio della seconda categoria (Cleats)
+- La categoria Fishing genera da sola circa 7 milioni di $ di fatturato, quasi il doppio della seconda categoria (Cleats)
 
 ## Visualizzazioni
 
