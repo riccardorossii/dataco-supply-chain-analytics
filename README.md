@@ -8,19 +8,11 @@ Analisi SQL su un dataset di supply chain globale (18.000+ ordini, 50+ variabili
 
 ## Obiettivo
 
-Rispondere a domande operative tipiche di un ruolo supply chain / ops:
+Rispondere a domande operative tipiche di una supply chain / ops:
 - Quali regioni hanno i ritardi di consegna maggiori?
 - Quali modalita' di spedizione sono piu' affidabili?
 - Quali categorie prodotto generano piu' fatturato?
 - Come varia il fatturato nel tempo?
-
-## Setup
-
-1. Scarica il CSV da Kaggle (link sopra) e posizionalo nella cartella del progetto
-2. Crea il database: `CREATE DATABASE supply_chain;`
-3. Installa le dipendenze: `pip install pandas mysql-connector-python sqlalchemy`
-4. Aggiorna le credenziali MySQL in `dataco_starter.py`
-5. Esegui `python dataco_starter.py` per caricare i dati ed eseguire le query di base
 
 ## Struttura
 
@@ -28,8 +20,6 @@ Rispondere a domande operative tipiche di un ruolo supply chain / ops:
 - `queries/kpi_queries.sql` — tutte le query SQL scritte per l'analisi
 
 ## Risultati principali
-
-*(da completare con i tuoi numeri effettivi, esempio sotto)*
 
 - La regione con il ritardo medio di consegna piu' alto è Central Asia con 0.65 giorni di ritardo medio
 - La modalita' di spedizione piu' affidabile è Standard Class, con solo il 39% di ordini a rischio ritardo
