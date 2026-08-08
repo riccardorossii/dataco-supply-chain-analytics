@@ -76,6 +76,35 @@ Rispondere a domande utili per la pianificazione operativa:
 
 ![Componenti del modello (trend e stagionalita')](images/prophet_components.png)
 
+
+---
+
+# Report KPI automatico
+
+Script Python che genera un report Excel con i KPI principali, direttamente dal database MySQL, senza doverli copiare a mano da Workbench ogni volta.
+
+## Obiettivo
+
+Automatizzare un task ripetitivo: invece di eseguire manualmente le 5 query KPI su Workbench e copiarle in Excel una per una, lo script fa tutto in un comando.
+
+## Setup
+
+1. Assicurati che il database MySQL `supply_chain` sia gia' popolato (vedi progetto 1)
+2. Installa le dipendenze: `pip install pandas openpyxl sqlalchemy mysql-connector-python`
+3. Aggiorna le credenziali MySQL nello script
+4. Esegui: `python generate_kpi_report.py`
+
+## Cosa fa
+
+- Si connette al database MySQL
+- Esegue le 5 query KPI (stesse del progetto 1)
+- Scrive ogni risultato in un foglio Excel separato, con intestazioni in grassetto e colonne dimensionate automaticamente
+- Salva il file con la data del giorno nel nome (es. `report_kpi_2026-08-06.xlsx`), cosi' ogni esecuzione produce un file nuovo senza sovrascrivere i precedenti
+
+## Struttura
+
+- `generate_kpi_report.py` - script principale
+
 ## Autore
 
 Riccardo Rossi — [LinkedIn](https://linkedin.com/in/riccardorossi-471597250)
